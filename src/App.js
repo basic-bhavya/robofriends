@@ -3,6 +3,7 @@ import CardList from './CardList';
 // import { robots } from './robots';
 import SearchBox from './SearchBox';
 import './App.css';
+import Scroll from './Scroll'
 
 class App extends Component {
     constructor() {
@@ -33,10 +34,12 @@ componentDidMount() {
         return <h1 className='dib tc'>Loading....</h1>
         else 
         return (
-            <div>
+            <div className='tc mt1'>
                 <h1 className='tc underline f1'>Robofriends</h1>
                 <SearchBox SearchChange = {this.onSearchChange}/>
-                < CardList robots={filterRobots} />
+                <Scroll>
+                    < CardList robots={filterRobots} />
+                </Scroll>
             </div>
         )
     
