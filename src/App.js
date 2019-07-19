@@ -35,7 +35,8 @@ componentDidMount() {
         else 
         return (
             <div className='tc mt1'>
-                <h1 className='tc underline f1'>Robofriends</h1>
+                <h1 className='tc underline f1'>FriendSave</h1>
+                <h3 className='tc ml-2'>Save and find your friends' names</h3>
                 <SearchBox SearchChange = {this.onSearchChange}/>
                 <Scroll>
                     < CardList robots={filterRobots} />
