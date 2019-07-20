@@ -22,6 +22,18 @@ export const robots = [
         username: 'manyabane',
         name: 'Mandir Bhushan',
         email: 'mandiryahibanega@gmail.com'
-    }
+    },
+    {
+        id: 5,
+        username: 'sommore',
+        name: 'Someone Selse',
+        email: 'else.someone@gmail.com'
+    },
+    {
+        id: 6,
+        username: 'radish',
+        name: 'Radical Radish',
+        email: 'radicool@gmail.com'
+    },
 
 ]
