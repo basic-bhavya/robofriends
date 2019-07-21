@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
+import CardList from '../Components/CardList';
 // import { robots } from './robots';
-import SearchBox from './SearchBox';
+import SearchBox from '../Components/SearchBox';
 import './App.css';
-import Scroll from './Scroll'
+import Scroll from '../Components/Scroll'
 
 class App extends Component {
     constructor() {
@@ -31,7 +31,7 @@ componentDidMount() {
         
 
         if(this.state.robots.length === 0)
-        return <h1 className='dib tc'>Loading....</h1>
+        return <h1 className='dib'>Loading....</h1>
         else 
         return (
             <div className='tc mt1'>
